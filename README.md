@@ -31,4 +31,4 @@ The policy was developed for a simulated Texas HHS-style environment handling se
 `Policy Authoring` · `Framework Cross-Mapping (NIST/ISO/CIS)` · `Governance, Risk & Compliance` · `Technical Writing`
 
 ---
-> *If you're able to share a redacted/sanitized excerpt of the actual policy document (with any simulated-organization specifics removed), link or embed it here — a real writing sample is stronger than a description of one.*
+
