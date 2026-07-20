@@ -1,37 +1,34 @@
-# Reverse TCP Payload Penetration Testing (Metasploit)
+# Access Control Policy Development (Simulated Texas HHS Environment)
 
-**Timeframe:** Jan 2025 – May 2025
-**Tools:** Metasploit, MSF Venom, Meterpreter, Python (HTTP server), NVD, CVSS
+**Timeframe:** Aug 2024
+**Frameworks:** NIST SP 800-53 Rev. 5, ISO/IEC 27001, CIS Critical Security Controls
 
 ## Objective
 
-Demonstrate the full attack lifecycle of a reverse TCP payload against a lab target — from payload generation through delivery, execution, and post-exploitation — and translate the technical findings into a documented vulnerability report with CVSS scoring, the way a real engagement would require.
+Develop a comprehensive Access Control Policy for a simulated state health & human services environment, translating regulatory and framework requirements into concrete, implementable organizational policy.
 
-## Environment
+## Scope
 
+The policy was developed for a simulated Texas HHS-style environment handling sensitive constituent data, requiring alignment with NIST SP 800-53 access control (AC) family requirements, ISO/IEC 27001 Annex A controls, and CIS Critical Security Controls.
 
-## Methodology
+## Policy Sections Authored
 
-1. **Payload generation** — Used `msfvenom` to generate a reverse TCP payload targeting the lab machine's OS/architecture, configuring `LHOST`/`LPORT` to match the attacker listener.
-2. **Delivery** — Hosted the payload for retrieval using a lightweight Python HTTP server (`python3 -m http.server`), simulating a common delivery vector where a victim downloads and executes a file from an attacker-controlled host.
-3. **Handler setup** — Configured a Metasploit `multi/handler` listener matching the payload's connect-back parameters.
-4. **Execution & post-exploitation** — Upon execution on the target, obtained a Meterpreter session and used it to enumerate system information, confirming code execution and session stability.
-5. **Vulnerability documentation** — Mapped the exploitation path back to the underlying vulnerability class, referenced relevant NVD entries, and assigned/validated CVSS scores to communicate severity and prioritize remediation.
+- **Least Privilege & Role-Based Access** — Defined access provisioning principles ensuring users receive only the permissions required for their role.
+- **Multi-Factor Authentication (MFA)** — Specified MFA requirements for privileged and remote access scenarios.
+- **Network Segmentation** — Outlined segmentation requirements to isolate sensitive data stores from general network access.
+- **Mobile Device Management (MDM)** — Defined endpoint enrollment, compliance, and remote-wipe requirements for devices accessing organizational data.
+- **Monitoring & Logging** — Established logging requirements for access events to support detection and audit needs.
+- **Incident Response Integration** — Connected access-control violations to the broader incident response process, defining escalation triggers.
 
-## Key Findings
+## Approach
 
-
-
-## Remediation Recommendations
-
-- Enforce endpoint protection/EDR capable of detecting Meterpreter-style in-memory payloads
-- Restrict outbound connections to unapproved ports/hosts to limit reverse-shell callbacks
-- Apply patch management to close the specific vulnerability exploited
-- User awareness training on execution of untrusted downloaded files
+1. Reviewed the relevant NIST SP 800-53 AC control family and cross-mapped requirements against ISO/IEC 27001 Annex A and CIS Controls to identify overlapping and unique requirements.
+2. Drafted policy language for each control area in plain, implementable terms rather than restating the framework verbatim.
+3. Built in monitoring/logging and incident-response tie-ins so the policy functioned as an operational document, not just a compliance artifact.
 
 ## Skills Demonstrated
 
-`Exploitation & Post-Exploitation` · `Payload Engineering` · `Python Automation` · `CVSS/NVD Vulnerability Documentation` · `Technical Reporting`
+`Policy Authoring` · `Framework Cross-Mapping (NIST/ISO/CIS)` · `Governance, Risk & Compliance` · `Technical Writing`
 
 ---
-*Lab conducted in an isolated, non-production environment for educational purposes as part of coursework.*
+> *If you're able to share a redacted/sanitized excerpt of the actual policy document (with any simulated-organization specifics removed), link or embed it here — a real writing sample is stronger than a description of one.*
