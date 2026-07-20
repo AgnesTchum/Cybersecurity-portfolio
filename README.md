@@ -9,7 +9,6 @@ Demonstrate the full attack lifecycle of a reverse TCP payload against a lab tar
 
 ## Environment
 
-> *Replace this with your actual lab setup: attacker VM, target VM, OS versions, network configuration (e.g., isolated NAT/host-only network — never a production or public network).*
 
 ## Methodology
 
@@ -21,7 +20,7 @@ Demonstrate the full attack lifecycle of a reverse TCP payload against a lab tar
 
 ## Key Findings
 
-> *Fill in with your actual results: which vulnerability/misconfiguration allowed execution, the CVE(s) referenced if applicable, and the CVSS base score you documented.*
+
 
 ## Remediation Recommendations
 
